@@ -30,13 +30,23 @@ irm https://raw.githubusercontent.com/zhengjiazhi929-commits/codex-pet-market/ma
 
 安装器会显示目录、校验 SHA-256、备份同 ID 的旧宠物，再写入用户目录中的 `.codex/pets/<pet-id>`。
 
-## 首只宠物
+## 宠物预览
 
 ### 白曜机甲
 
 沉稳的原创白色 AI 机甲，全程保持机器人形态。11 行 v2 图集、16 个观察方向、透明边缘、动作语义与视觉去品牌检查均已通过。
 
-![白曜机甲预览](pets/baiyao-mecha/preview.gif)
+[![白曜机甲动态预览](pets/baiyao-mecha/preview.gif)](pets/baiyao-mecha/README.md)
+
+[查看白曜机甲详情](pets/baiyao-mecha/README.md)
+
+### 奶豆
+
+困倦迷糊、总爱歪头发呆的原创奶白色短绒小豆子。11 行 v2 图集、16 个观察方向、透明边缘与动作语义检查均已通过。
+
+[![奶豆动态预览](pets/naidou/preview.gif)](pets/naidou/README.md)
+
+[查看奶豆详情](pets/naidou/README.md)
 
 ## 投稿
 
