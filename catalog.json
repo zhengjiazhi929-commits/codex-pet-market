@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "pets": [
+    {
+      "id": "baiyao-mecha",
+      "displayName": "白曜机甲",
+      "description": "一只沉稳克制的原创白色 AI 机甲；所有动作均保持机器人形态。",
+      "spriteVersionNumber": 2,
+      "author": "Zhengjiazhi",
+      "assetLicense": "CC-BY-4.0",
+      "tags": [
+        "robot",
+        "white",
+        "calm",
+        "3d-toy"
+      ],
+      "files": {
+        "pet": "pet.json",
+        "spritesheet": "spritesheet.webp",
+        "preview": "preview.gif"
+      },
+      "sha256": {
+        "spritesheet": "e85bdcd6284d5dbe5f544eae9245fdbe7a6b4ddeeb09f49afcb24b865e0a7464",
+        "preview": "a53127294a14c3d8c659ea219ee2115b85d99d61112273f176cfc4ca3e1d8dc0"
+      },
+      "bytes": {
+        "spritesheet": 2163884,
+        "preview": 71437
+      }
+    }
+  ]
+}

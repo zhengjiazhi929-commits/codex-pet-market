@@ -1,0 +1,15 @@
+{
+  "name": "codex-pet-market",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A community catalog and safe installer for Codex v2 pets.",
+  "license": "MIT",
+  "scripts": {
+    "catalog": "node scripts/build-catalog.mjs",
+    "validate": "node scripts/validate-pets.mjs",
+    "check": "node scripts/build-catalog.mjs --check && node scripts/validate-pets.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
