@@ -40,11 +40,11 @@ irm https://raw.githubusercontent.com/zhengjiazhi929-commits/codex-pet-market/ma
 
 ## 投稿
 
-阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。每个 PR 只新增或更新一个 `pets/<pet-id>/` 目录。自动检查会验证配置、图集尺寸、透明度、哈希值、许可证和禁止文件。
+阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。每个 PR 只新增或更新一个 `pets/<pet-id>/` 目录。提交前运行 `npm run check`，它会验证配置、图集尺寸、透明度、哈希值、许可证和禁止文件。GitHub 自动检查将在仓库工作流权限完成配置后启用。
 
 ## 许可证
 
-- 安装器、验证脚本、CI 与仓库文档：MIT。
+- 安装器、验证脚本、预备 CI 配置与仓库文档：MIT。
 - 每只宠物的美术素材：以其目录内 `LICENSE-ASSETS.md` 为准；首只宠物采用 CC BY 4.0。
 
 本项目与 OpenAI、Codex 及任何汽车品牌均无关联，也未获得其赞助或背书。Codex 的宠物文件格式可能随应用更新而变化。
