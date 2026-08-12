@@ -1,0 +1,28 @@
+{
+  "id": "naidou",
+  "author": "Zhengjiazhi",
+  "assetLicense": "CC-BY-4.0",
+  "spriteVersionNumber": 2,
+  "tags": [
+    "plush",
+    "cream",
+    "sleepy",
+    "cute"
+  ],
+  "atlas": {
+    "width": 1536,
+    "height": 2288,
+    "columns": 8,
+    "rows": 11,
+    "cellWidth": 192,
+    "cellHeight": 208
+  },
+  "sha256": {
+    "spritesheet": "605f19164cdc8a9d4739cc6a19e36a00ac6da677abb4b359f9907a74a379319d",
+    "preview": "3a22a1a49f4d0a4d59eeef652a80cd919f23faf6b098415212a4ac757e29955a"
+  },
+  "bytes": {
+    "spritesheet": 2231908,
+    "preview": 47762
+  }
+}
