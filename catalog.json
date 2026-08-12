@@ -27,6 +27,33 @@
         "spritesheet": 2163884,
         "preview": 71437
       }
+    },
+    {
+      "id": "naidou",
+      "displayName": "奶豆",
+      "description": "一颗困倦迷糊、总爱歪头发呆的奶白色短绒小豆子。",
+      "spriteVersionNumber": 2,
+      "author": "Zhengjiazhi",
+      "assetLicense": "CC-BY-4.0",
+      "tags": [
+        "plush",
+        "cream",
+        "sleepy",
+        "cute"
+      ],
+      "files": {
+        "pet": "pet.json",
+        "spritesheet": "spritesheet.webp",
+        "preview": "preview.gif"
+      },
+      "sha256": {
+        "spritesheet": "605f19164cdc8a9d4739cc6a19e36a00ac6da677abb4b359f9907a74a379319d",
+        "preview": "3a22a1a49f4d0a4d59eeef652a80cd919f23faf6b098415212a4ac757e29955a"
+      },
+      "bytes": {
+        "spritesheet": 2231908,
+        "preview": 47762
+      }
     }
   ]
 }
