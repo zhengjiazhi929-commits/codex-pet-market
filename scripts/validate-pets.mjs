@@ -62,6 +62,54 @@ function inspectWebp(buffer) {
   throw new Error("spritesheet.webp must use VP8X or lossless VP8L WebP metadata");
 }
 
+function inspectGif(buffer) {
+  const signature = buffer.toString("ascii", 0, 6);
+  if (signature !== "GIF89a" && signature !== "GIF87a") {
+    throw new Error("preview.gif is not a GIF");
+  }
+  if (buffer.length < 13) throw new Error("preview.gif is truncated");
+
+  const packed = buffer[10];
+  let offset = 13;
+  if (packed & 0x80) offset += 3 * (2 ** ((packed & 0x07) + 1));
+
+  let frames = 0;
+  const skipSubBlocks = () => {
+    while (offset < buffer.length) {
+      const size = buffer[offset++];
+      if (size === 0) return;
+      offset += size;
+      if (offset > buffer.length) throw new Error("preview.gif has a truncated data block");
+    }
+    throw new Error("preview.gif is missing a block terminator");
+  };
+
+  while (offset < buffer.length) {
+    const marker = buffer[offset++];
+    if (marker === 0x3b) break;
+    if (marker === 0x21) {
+      if (offset >= buffer.length) throw new Error("preview.gif has a truncated extension");
+      offset += 1;
+      skipSubBlocks();
+      continue;
+    }
+    if (marker === 0x2c) {
+      if (offset + 9 > buffer.length) throw new Error("preview.gif has a truncated image descriptor");
+      const imagePacked = buffer[offset + 8];
+      offset += 9;
+      if (imagePacked & 0x80) offset += 3 * (2 ** ((imagePacked & 0x07) + 1));
+      if (offset >= buffer.length) throw new Error("preview.gif is missing LZW data");
+      offset += 1;
+      skipSubBlocks();
+      frames += 1;
+      continue;
+    }
+    throw new Error(`preview.gif contains an unexpected block marker 0x${marker.toString(16)}`);
+  }
+
+  return { frames };
+}
+
 async function sha256(file) {
   return createHash("sha256").update(await readFile(file)).digest("hex");
 }
@@ -117,11 +165,17 @@ for (const dirent of await readdir(petsRoot, { withFileTypes: true })) {
     }
     const previewPath = path.join(petDir, "preview.gif");
     const preview = await readFile(previewPath);
+    const previewInfo = inspectGif(preview);
     if (market.sha256?.spritesheet !== await sha256(atlasPath)) fail(id, "spritesheet SHA-256 does not match market.json");
     if (market.sha256?.preview !== await sha256(previewPath)) fail(id, "preview SHA-256 does not match market.json");
     if (market.bytes?.spritesheet !== atlas.length) fail(id, "spritesheet byte size does not match market.json");
     if (market.bytes?.preview !== preview.length) fail(id, "preview byte size does not match market.json");
-    if (preview.toString("ascii", 0, 6) !== "GIF89a" && preview.toString("ascii", 0, 6) !== "GIF87a") fail(id, "preview.gif is not a GIF");
+    if (previewInfo.frames < 2) fail(id, "preview.gif must be an animated GIF with at least 2 frames");
+
+    const readme = await readFile(path.join(petDir, "README.md"), "utf8");
+    if (!/!\[[^\]\r\n]*\]\(preview\.gif\)/.test(readme)) {
+      fail(id, "README.md must directly embed preview.gif using Markdown image syntax");
+    }
   } catch (error) {
     fail(id, error.message);
   }

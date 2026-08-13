@@ -22,6 +22,8 @@ pets/<pet-id>/
 - `spritesheet.webp` 必须是 `1536 × 2288`、带透明通道的 WebP 图集。
 - 图集必须遵循 8 列 × 11 行、单格 `192 × 208` 的 Codex v2 结构。
 - `market.json` 必须填写作者、素材许可证、文件大小与 SHA-256。
+- `preview.gif` 必须是真实的多帧动态 GIF，至少包含 2 帧；静态图片或仅改扩展名的文件无法通过校验。
+- `README.md` 必须用 Markdown 图片语法直接展示 `preview.gif`，例如 `![宠物名动态预览](preview.gif)`。
 - 投稿者必须拥有发布素材所需的权利；不得使用未经授权的商标、角色、人物肖像或版权素材。
 - 预览应真实反映宠物，不得包含误导性文字或外链跟踪内容。
 - 单只宠物的全部文件总计不得超过 15 MiB；图集不得超过 8 MiB。
@@ -34,8 +36,8 @@ pets/<pet-id>/
 
 1. Fork 仓库并创建分支 `pet/<pet-id>`。
 2. 每个 PR 只新增或更新一只宠物。
-3. 运行 `npm run catalog` 与 `npm run validate`。
-4. 提交生成后的 `catalog.json`。
+3. 运行 `npm run catalog` 与 `npm run validate`。`npm run catalog` 会同时更新 `catalog.json` 和仓库首页的宠物预览区。
+4. 提交生成后的 `catalog.json`、首页 `README.md` 与宠物目录内的全部 6 个规定文件。
 5. 创建 PR，填写模板中的权利声明和测试结果。
 
 维护者会根据结构、安全性、视觉完整性与许可证清晰度进行审核。提交前请在仓库根目录运行 `npm run check`；校验通过不代表维护者一定合并。
