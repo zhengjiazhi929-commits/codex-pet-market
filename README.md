@@ -32,21 +32,25 @@ irm https://raw.githubusercontent.com/zhengjiazhi929-commits/codex-pet-market/ma
 
 ## 宠物预览
 
-### 白曜机甲
+以下内容由 `npm run catalog` 根据 `pets/` 自动生成。新增宠物时必须提供多帧动态 `preview.gif`，并在宠物详情页直接展示。
 
-沉稳的原创白色 AI 机甲，全程保持机器人形态。11 行 v2 图集、16 个观察方向、透明边缘、动作语义与视觉去品牌检查均已通过。
+<!-- PET_PREVIEWS:START -->
+### [白曜机甲](pets/baiyao-mecha/README.md)
+
+一只沉稳克制的原创白色 AI 机甲；所有动作均保持机器人形态。
 
 [![白曜机甲动态预览](pets/baiyao-mecha/preview.gif)](pets/baiyao-mecha/README.md)
 
 [查看白曜机甲详情](pets/baiyao-mecha/README.md)
 
-### 奶豆
+### [奶豆](pets/naidou/README.md)
 
-困倦迷糊、总爱歪头发呆的原创奶白色短绒小豆子。11 行 v2 图集、16 个观察方向、透明边缘与动作语义检查均已通过。
+一颗困倦迷糊、总爱歪头发呆的奶白色短绒小豆子。
 
 [![奶豆动态预览](pets/naidou/preview.gif)](pets/naidou/README.md)
 
 [查看奶豆详情](pets/naidou/README.md)
+<!-- PET_PREVIEWS:END -->
 
 ## 投稿
 
