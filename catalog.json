@@ -56,6 +56,34 @@
       }
     },
     {
+      "id": "knife-shield-shiba",
+      "displayName": "刀盾柴犬",
+      "description": "一只圆润勇敢、手持短刀与盾牌的 3D 柴犬战士。",
+      "spriteVersionNumber": 2,
+      "author": "Zhengjiazhi",
+      "assetLicense": "CC-BY-4.0",
+      "tags": [
+        "shiba",
+        "warrior",
+        "sword",
+        "shield",
+        "3d-toy"
+      ],
+      "files": {
+        "pet": "pet.json",
+        "spritesheet": "spritesheet.webp",
+        "preview": "preview.gif"
+      },
+      "sha256": {
+        "spritesheet": "93422f3a836352cc034ef95581813fdda2c328adc7da62bbbe8be2ecc8f0fe58",
+        "preview": "65cffd070f49fe45a2fdbb0acd0baeb35560f1af3ce9f9da8b97a1f61bf4559e"
+      },
+      "bytes": {
+        "spritesheet": 2336824,
+        "preview": 79478
+      }
+    },
+    {
       "id": "naidou",
       "displayName": "奶豆",
       "description": "一颗困倦迷糊、总爱歪头发呆的奶白色短绒小豆子。",
