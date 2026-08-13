@@ -43,6 +43,14 @@ irm https://raw.githubusercontent.com/zhengjiazhi929-commits/codex-pet-market/ma
 
 [查看白曜机甲详情](pets/baiyao-mecha/README.md)
 
+### [橘慢慢](pets/ju-manman/README.md)
+
+一只始终慵懒淡定、动作很少、头顶小橘子、穿蓝星小裤衩的黄色河马搭档。
+
+[![橘慢慢动态预览](pets/ju-manman/preview.gif)](pets/ju-manman/README.md)
+
+[查看橘慢慢详情](pets/ju-manman/README.md)
+
 ### [奶豆](pets/naidou/README.md)
 
 一颗困倦迷糊、总爱歪头发呆的奶白色短绒小豆子。
