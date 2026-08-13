@@ -29,6 +29,33 @@
       }
     },
     {
+      "id": "ju-manman",
+      "displayName": "橘慢慢",
+      "description": "一只始终慵懒淡定、动作很少、头顶小橘子、穿蓝星小裤衩的黄色河马搭档。",
+      "spriteVersionNumber": 2,
+      "author": "Zhengjiazhi",
+      "assetLicense": "CC-BY-4.0",
+      "tags": [
+        "hippo",
+        "yellow",
+        "sleepy",
+        "calm"
+      ],
+      "files": {
+        "pet": "pet.json",
+        "spritesheet": "spritesheet.webp",
+        "preview": "preview.gif"
+      },
+      "sha256": {
+        "spritesheet": "d8fed9a3afa13050aa619e8e673977850d1e59c1a0ceb821c515963629064fd5",
+        "preview": "46934497118656db14226343f79d78613f0d06d82bf7808614cdf9e854df833d"
+      },
+      "bytes": {
+        "spritesheet": 2164698,
+        "preview": 45413
+      }
+    },
+    {
       "id": "naidou",
       "displayName": "奶豆",
       "description": "一颗困倦迷糊、总爱歪头发呆的奶白色短绒小豆子。",

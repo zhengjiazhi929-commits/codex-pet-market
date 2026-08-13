@@ -1,0 +1,28 @@
+{
+  "id": "ju-manman",
+  "author": "Zhengjiazhi",
+  "assetLicense": "CC-BY-4.0",
+  "spriteVersionNumber": 2,
+  "tags": [
+    "hippo",
+    "yellow",
+    "sleepy",
+    "calm"
+  ],
+  "atlas": {
+    "width": 1536,
+    "height": 2288,
+    "columns": 8,
+    "rows": 11,
+    "cellWidth": 192,
+    "cellHeight": 208
+  },
+  "sha256": {
+    "spritesheet": "d8fed9a3afa13050aa619e8e673977850d1e59c1a0ceb821c515963629064fd5",
+    "preview": "46934497118656db14226343f79d78613f0d06d82bf7808614cdf9e854df833d"
+  },
+  "bytes": {
+    "spritesheet": 2164698,
+    "preview": 45413
+  }
+}
