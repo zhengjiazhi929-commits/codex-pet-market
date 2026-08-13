@@ -1,0 +1,29 @@
+{
+  "id": "knife-shield-shiba",
+  "author": "Zhengjiazhi",
+  "assetLicense": "CC-BY-4.0",
+  "spriteVersionNumber": 2,
+  "tags": [
+    "shiba",
+    "warrior",
+    "sword",
+    "shield",
+    "3d-toy"
+  ],
+  "atlas": {
+    "width": 1536,
+    "height": 2288,
+    "columns": 8,
+    "rows": 11,
+    "cellWidth": 192,
+    "cellHeight": 208
+  },
+  "sha256": {
+    "spritesheet": "93422f3a836352cc034ef95581813fdda2c328adc7da62bbbe8be2ecc8f0fe58",
+    "preview": "65cffd070f49fe45a2fdbb0acd0baeb35560f1af3ce9f9da8b97a1f61bf4559e"
+  },
+  "bytes": {
+    "spritesheet": 2336824,
+    "preview": 79478
+  }
+}

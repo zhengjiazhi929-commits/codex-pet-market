@@ -51,6 +51,14 @@ irm https://raw.githubusercontent.com/zhengjiazhi929-commits/codex-pet-market/ma
 
 [查看橘慢慢详情](pets/ju-manman/README.md)
 
+### [刀盾柴犬](pets/knife-shield-shiba/README.md)
+
+一只圆润勇敢、手持短刀与盾牌的 3D 柴犬战士。
+
+[![刀盾柴犬动态预览](pets/knife-shield-shiba/preview.gif)](pets/knife-shield-shiba/README.md)
+
+[查看刀盾柴犬详情](pets/knife-shield-shiba/README.md)
+
 ### [奶豆](pets/naidou/README.md)
 
 一颗困倦迷糊、总爱歪头发呆的奶白色短绒小豆子。
